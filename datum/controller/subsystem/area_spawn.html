@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;datum&#x2F;controller&#x2F;subsystem&#x2F;area_spawn - &#x2F;tg&#x2F; Station 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">&#x2F;tg&#x2F; Station 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="datum/controller/subsystem/area_spawn.html#proc">Proc Details</a></header>
+<main>
+<h1>area_spawn <aside>/<a href="datum.html">datum</a>/<a href="datum/controller/subsystem.html">controller/subsystem</a>/<a href="datum/controller/subsystem/area_spawn.html">area_spawn</a></aside>
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/d0d82361efa8b35a8fe36a37c3e645828a71edbb/modular_skyrat/modules/automapper/code/area_spawn_subsystem.dm#L1">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;modules&#x2F;automapper&#x2F;code&#x2F;area_spawn_subsystem.dm 1"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="datum/controller/subsystem/area_spawn.html#proc/clear_cache">clear_cache</a></th><td>Clear the cached tiles for optimization or debugging purposes.</td></tr>
+            <tr><th><a href="datum/controller/subsystem/area_spawn.html#proc/get_turf_candidates">get_turf_candidates</a></th><td>Process the geometry of an area and cache the candidates.</td></tr>
+            <tr><th><a href="datum/controller/subsystem/area_spawn.html#proc/pick_turf_candidate">pick_turf_candidate</a></th><td>Pick a turf candidate and remove from the list.</td></tr>
+            <tr><th><a href="datum/controller/subsystem/area_spawn.html#proc/process_turf">process_turf</a></th><td>Process a specific turf and return priority number from 0 to infinity.</td></tr></table><h2 id="proc">Proc Details</h2><h3 id="proc/clear_cache"><aside class="declaration">proc </aside>clear_cache<aside>() 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/d0d82361efa8b35a8fe36a37c3e645828a71edbb/modular_skyrat/modules/automapper/code/area_spawn_subsystem.dm#L40">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;modules&#x2F;automapper&#x2F;code&#x2F;area_spawn_subsystem.dm 40"/></a></aside>
+        </h3>
+        <p>Clear the cached tiles for optimization or debugging purposes.</p><h3 id="proc/get_turf_candidates"><aside class="declaration">proc </aside>get_turf_candidates<aside>(/<a href="area.html">area</a>/area, wall_hug) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/d0d82361efa8b35a8fe36a37c3e645828a71edbb/modular_skyrat/modules/automapper/code/area_spawn_subsystem.dm#L54">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;modules&#x2F;automapper&#x2F;code&#x2F;area_spawn_subsystem.dm 54"/></a></aside>
+        </h3>
+        <p>Process the geometry of an area and cache the candidates.</p>
+<p>Returns turf candidate list. &quot;[priority]&quot; =</p>
+<p>Arguments:</p>
+<ul>
+<li>area - the area to process</li>
+<li>wall_hug - Are we processing for wall_hug case or not?</li>
+</ul><h3 id="proc/pick_turf_candidate"><aside class="declaration">proc </aside>pick_turf_candidate<aside>(/list/list/turf/turf_candidates) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/d0d82361efa8b35a8fe36a37c3e645828a71edbb/modular_skyrat/modules/automapper/code/area_spawn_subsystem.dm#L172">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;modules&#x2F;automapper&#x2F;code&#x2F;area_spawn_subsystem.dm 172"/></a></aside>
+        </h3>
+        <p>Pick a turf candidate and remove from the list.</p>
+<p>Only picks one of the highest priority ones.</p>
+<p>Arguments:</p>
+<ul>
+<li>turf_candidates - Turf candidate list produced by</li>
+</ul><h3 id="proc/process_turf"><aside class="declaration">proc </aside>process_turf<aside>(/<a href="turf.html">turf</a>/turf, wall_hug) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/d0d82361efa8b35a8fe36a37c3e645828a71edbb/modular_skyrat/modules/automapper/code/area_spawn_subsystem.dm#L93">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;modules&#x2F;automapper&#x2F;code&#x2F;area_spawn_subsystem.dm 93"/></a></aside>
+        </h3>
+        <p>Process a specific turf and return priority number from 0 to infinity.</p>
+<p>Turfs with highest priority will be picked. Priority 0 means NEVER.</p>
+<p>Arguments:</p>
+<ul>
+<li>turf - The turf to process</li>
+<li>wall_hug - Are we processing for wall_hug case or not?</li>
+</ul></main>
+<footer>
+    tgstation.dme
+    <a href="https://github.com/Skyrat-SS13/Skyrat-tg/tree/d0d82361efa8b35a8fe36a37c3e645828a71edbb">d0d8236</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>
